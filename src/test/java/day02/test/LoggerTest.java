@@ -9,23 +9,23 @@ class LoggerTest {
 	
 	
 	@Test
-	void testDebug() {
+	void Debugtest() {
 		Logger log = new Logger();
-		assertEquals("Check1",log.debug("Check1"));
+		assertEquals("hello",log.debug("hello"));
 		assertEquals(5,log.debug(5));
 	}
 	
 	@Test
-	void testInfo() {
+	void Infotest() {
 		Logger log = new Logger();
 		assertEquals("info",log.info("info"));
 		assertNotEquals(10,log.info(3));
 	}
 	
 	@Test
-	void testError() {
+	void Errortest() {
 		Logger log = new Logger();
-		assertNotEquals("Error",log.error("error"));
+		assertEquals("error",log.error("error"));
 		assertEquals(1,log.error(1));
 	}
 		
