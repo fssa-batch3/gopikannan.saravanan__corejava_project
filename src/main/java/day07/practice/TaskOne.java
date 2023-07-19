@@ -16,10 +16,6 @@ public class TaskOne {
 		this.deadline = deadline;
 	}
 
-	public TaskOne(String string, int i, LocalDate parse) {
-		// TODO Auto-generated constructor stub
-	}
-
 	public String getName() {
 		return name;
 	}
