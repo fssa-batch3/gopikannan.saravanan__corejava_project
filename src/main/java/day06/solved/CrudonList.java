@@ -44,7 +44,7 @@ public class CrudonList {
 		System.out.println(cityList);
 
 		// Removing specific element
-		cityList.remove("Delhi");
+		cityList.remove("Delhi"); 
 
 		System.out.println("List after removing Delhi");
 
