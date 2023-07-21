@@ -44,22 +44,12 @@ public class TaskList implements Comparable<TaskList> {
 	@Override
 	public int compareTo(TaskList other) {
 
-//        int idComparison = Integer.compare(this.id, other.id);
-//        
-//       
-//        if (idComparison != 0) {
-//            return idComparison;
-//        }
-//        
-
 		int monthComparison = Integer.compare(this.deadline.getMonthValue(), other.deadline.getMonthValue());
 
-		
 		if (monthComparison != 0) {
 			return monthComparison;
 		}
 
-		
 		return Integer.compare(this.deadline.getDayOfMonth(), other.deadline.getDayOfMonth());
 	}
 
