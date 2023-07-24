@@ -6,10 +6,13 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import org.junit.jupiter.api.Test;
+
 import day07.practice.Task;
 
 public class TaskDuplicatesTest {
-	public static void main(String[] args) {
+	@Test
+	void test(){
 		List<Task> taskList = new ArrayList<>();
 
 		taskList.add(new Task("Task 1", 1, LocalDate.parse("2023-07-18")));

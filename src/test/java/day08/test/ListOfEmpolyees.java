@@ -2,10 +2,12 @@ package day08.test;
 
 import java.util.Scanner;
 
+import org.junit.jupiter.api.Test;
+
 import day08.practice.ListOfEmployees;
 
 public class ListOfEmpolyees {
-
+	@Test
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 

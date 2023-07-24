@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 public class DuplicatesTask {
 	@Test
-	public static void main(String[] args) {
+	void Test() {
 
 		ArrayList<Integer> numbers = new ArrayList<>();
 		numbers.add(1);

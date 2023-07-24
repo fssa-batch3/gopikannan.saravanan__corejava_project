@@ -7,6 +7,10 @@ public class Task {
 	private String name;
 	private String status;
 
+	public Task() {
+
+	}
+
 	public Task(int id, String name, String status) {
 		this.id = id;
 		this.name = name;
@@ -36,23 +40,20 @@ public class Task {
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	
-	
-	public static void main(String []args) {
-		
-		Task newtask = new Task(1,"CheckCalendar","Finished");
-		
+
+	public static void main(String[] args) {
+
+		Task newtask = new Task(1, "CheckCalendar", "Finished");
+
 		Taskdaoexception newdao = new Taskdaoexception();
-		 
+
 		try {
-			
+
 			newdao.createTask(newtask);
-		}
-		catch(DAOException |SQLException e) {
+		} catch (DAOException | SQLException e) {
 			e.printStackTrace();
-			
+
 		}
-		
-		
+
 	}
 }

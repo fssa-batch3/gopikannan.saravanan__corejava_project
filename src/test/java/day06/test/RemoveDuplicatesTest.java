@@ -3,8 +3,11 @@ package day06.test;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.junit.jupiter.api.Test;
+
 public class RemoveDuplicatesTest {
-	public static void main(String[] args) {
+	@Test
+	void test1() {
 
 		List<String> cityList = new ArrayList<String>();
 		cityList.add("Chennai");

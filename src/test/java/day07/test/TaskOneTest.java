@@ -5,10 +5,13 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import org.junit.jupiter.api.Test;
+
 import day07.practice.TaskOne;
 
 public class TaskOneTest {
-	public static void main(String[] args) {
+	@Test
+	void test() {
 
 		List<TaskOne> taskList = new ArrayList<>();
 

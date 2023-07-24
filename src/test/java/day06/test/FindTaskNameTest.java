@@ -2,12 +2,15 @@ package day06.test;
 
 import java.util.ArrayList;
 
+import org.junit.jupiter.api.Test;
+
 import day06.practice.FindTaskName;
 import day06.practice.Task;
 import day06.solved.*;
 
 public class FindTaskNameTest {
-	public static void main(String[] args) {
+	@Test
+	 void test1() {
 
 		ArrayList<Task> taskList = new ArrayList<>();
 		FindTaskName name = new FindTaskName();
