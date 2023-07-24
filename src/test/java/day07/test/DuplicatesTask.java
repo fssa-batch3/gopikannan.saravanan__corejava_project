@@ -3,7 +3,10 @@ package day07.test;
 import java.util.ArrayList;
 import java.util.HashSet;
 
+import org.junit.jupiter.api.Test;
+
 public class DuplicatesTask {
+	@Test
 	public static void main(String[] args) {
 
 		ArrayList<Integer> numbers = new ArrayList<>();

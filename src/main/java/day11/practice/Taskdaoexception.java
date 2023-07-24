@@ -12,7 +12,7 @@ public class Taskdaoexception {
 		Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/project", "root", "123456");
 		System.out.println(connection);
 
-		String query = "INSERT INTO tasklist (id, name, status) VALUES (?, ?, ?)";
+		String query = "INSERT INTO tasklist (id, taskname, taskstatus) VALUES (?, ?, ?)";
 		PreparedStatement stmt = connection.prepareStatement(query);
 
 		
