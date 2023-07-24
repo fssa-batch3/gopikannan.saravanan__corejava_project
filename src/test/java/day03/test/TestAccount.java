@@ -1,9 +1,9 @@
 package day03.test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 import static org.junit.Assert.assertNotEquals;
+import org.junit.Test;
 
-import org.junit.jupiter.api.Test;
 
 import day03.solved.Account;
 
@@ -19,6 +19,7 @@ public class TestAccount {
 		assertEquals("A101", acct1.accNo);
 
 	}
+
 	@Test
 	void test2() {
 		Account acct2 = new Account("A102", "Arun", 1000);
@@ -27,6 +28,5 @@ public class TestAccount {
 		assertNotEquals("A101", acct2.accNo);
 
 	}
-
 
 }

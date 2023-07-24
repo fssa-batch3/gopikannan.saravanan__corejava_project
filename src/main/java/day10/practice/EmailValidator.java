@@ -2,8 +2,8 @@ package day10.practice;
 
 import java.util.regex.*;
 
-class EmailValidator {
-	public static boolean isValidEmail(String emailId) throws InvalidEmailException {
+public class EmailValidator {
+	public  boolean isValidEmail(String emailId) throws InvalidEmailException {
 		String emailRegex = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
 		Pattern pattern = Pattern.compile(emailRegex);
 		Matcher matcher = pattern.matcher(emailId);
@@ -16,11 +16,10 @@ class EmailValidator {
 	}
 
 	public static void main(String[] args) {
+		EmailValidator mail = new EmailValidator();
 		String email1 = "gopikannan2906@gmail.com";
-		
-
 		try {
-			boolean isValid1 = isValidEmail(email1);
+			boolean isValid1 =mail.isValidEmail(email1);
 			System.out.println(email1 + " is valid: " + isValid1);
 
 			

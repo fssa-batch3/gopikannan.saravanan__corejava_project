@@ -1,19 +1,12 @@
-package day06.practice;
+package day06.test;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class FindTaskName {
+import day06.practice.FindTaskName;
+import day06.practice.Task;
+import day06.solved.*;
 
-	public  boolean findTaskByName(String name, ArrayList<Task> tasks) {
-		for (Task task : tasks) {
-			if (task.getTaskName().equals(name)) {
-				return true;
-			}
-		}
-		return false;
-	}
-
+public class FindTaskNameTest {
 	public static void main(String[] args) {
 
 		ArrayList<Task> taskList = new ArrayList<>();
@@ -31,4 +24,7 @@ public class FindTaskName {
 		System.out.println("Task with name " + searchName + " exists: " + taskExists);
 
 	}
+
+	
+
 }

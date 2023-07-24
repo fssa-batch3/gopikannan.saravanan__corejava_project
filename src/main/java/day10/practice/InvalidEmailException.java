@@ -2,7 +2,7 @@ package day10.practice;
 
 import java.util.*;
 
-class InvalidEmailException extends Exception {
+public class InvalidEmailException extends Exception {
 
 	private static final long serialVersionUID = -8105491977357554060L;
 
